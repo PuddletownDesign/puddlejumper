@@ -3,7 +3,7 @@
  * The Template for displaying all single posts
  */
 ?>
-<?php Inc::templates( array( 'includes/html-header', 'includes/header' ) ); ?>
+<?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'post' ); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 

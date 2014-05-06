@@ -3,7 +3,7 @@
  * The template for displaying Archive pages.
  */
 ?>
-<?php Inc::templates( array( 'includes/html-header', 'includes/header' ) ); ?>
+<?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'blog' ); ?>
 
 <?php if ( have_posts() ): ?>
 

@@ -2,7 +2,15 @@
 /** 
  * Site Config
  */
+
+/**
+ * Register the Primary Nav
+ */
 register_nav_menus(array('primary' => 'Primary Navigation'));
+
+/**
+ * Register a sidebar, just delete if you don't want it
+ */
 register_sidebar(array(
 	'name'          => 'Contact Details',
 	'id'            => 'footer-contact',

@@ -3,7 +3,7 @@
  * The template for displaying Author Archive pages
  */
 ?>
-<?php Inc::templates( array( 'includes/html-header', 'includes/header' ) ); ?>
+<?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'author' ); ?>
 
 <?php if ( have_posts() ): the_post(); ?>
 

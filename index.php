@@ -3,7 +3,7 @@
 Template Name: Blog
 */
 ?>
-<?php Inc::templates( array( 'includes/html-header', 'includes/header' ) ); ?>
+<?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'blog' ); ?>
 <article>
 <?php if ( have_posts() ): ?>
 	

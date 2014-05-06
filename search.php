@@ -3,7 +3,7 @@
  * Search results page
  */
 ?>
-<?php Inc::templates( array( 'includes/html-header', 'includes/header' ) ); ?>
+<?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'search' ); ?>
 <section>
 <?php if ( have_posts() ): ?>
 <h1>Search Results for &ldquo;<?php echo esc_attr(get_search_query()); ?>&rdquo;</h1>	

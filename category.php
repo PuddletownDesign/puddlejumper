@@ -3,7 +3,7 @@
  * Category Template
  */
 ?>
-<?php Inc::templates( array( 'includes/html-header', 'includes/header' ) ); ?>
+<?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'category' ); ?>
 
 <?php if ( have_posts() ): ?>
 <h1><?php echo single_cat_title( '', false ); ?></h1>

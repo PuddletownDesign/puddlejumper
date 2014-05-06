@@ -3,7 +3,7 @@
 Template Name: Home
 */
 ?>
-<?php Inc::templates( array( 'includes/html-header', 'includes/header' ) ); ?>
+<?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'home' ); ?>
 
 <article class="home">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

@@ -3,7 +3,7 @@
  * The template used to display Tag Archive pages
  */
 ?>
-<?php Inc::templates( array( 'includes/html-header', 'includes/header' ) ); ?>
+<?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'search' ); ?>
 
 <?php if ( have_posts() ): ?>
 <h1>Tag Archive: <?php echo single_tag_title( '', false ); ?></h1>

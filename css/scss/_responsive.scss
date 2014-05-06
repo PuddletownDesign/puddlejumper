@@ -1,0 +1,29 @@
+/* ------------------------------------------------------
+		Responive Control
+------------------------------------------------------ */
+
+
+@media (min-width: 480px) {
+	@import 'responsive/_480.scss';
+		
+}
+
+@media (min-width: 760px) {
+	@import 'responsive/_760.scss';
+
+}
+
+@media (min-width: 980px) {
+	@import 'responsive/_980.scss';
+	
+}
+
+@media (min-width: 1200px){
+	@import 'responsive/_1200.scss';
+	
+}
+
+@media (min-width: 1201px) {
+	@import 'responsive/_1201.scss';
+	
+}

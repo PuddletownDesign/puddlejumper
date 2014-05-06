@@ -1,0 +1,54 @@
+
+body {
+	max-width: 980px;
+	margin: 0;
+	padding: 10px;
+}
+/* ---------------------------
+	  Layout
+--------------------------- */
+
+body {
+	max-width:800px;
+	margin: 0 auto;
+	
+	> header {
+
+		h1, div {
+			a {
+
+			}
+			img {
+			}
+
+		}
+
+		#search {
+
+			input {
+			}
+			input#submit {
+			}
+
+		}
+
+		.primary {
+
+			ul {
+
+				li {
+
+					a {
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+	> footer {
+	}
+}
+

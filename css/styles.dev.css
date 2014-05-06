@@ -1,0 +1,179 @@
+/* ---------------------------------------------------------------------------------
+   ---------------------------------------------------------------------------------
+		Title: PuddleJumper CSS Starter
+		Description: For lame-o's not using SCSS
+		Author: Brent Schneider
+		URI: http://puddletowndesign.com/
+		Version: 1.1
+		Date: 01/24/13
+		
+		About:
+		- Hopefully you won't need this and can just delete it
+		
+		- use this in the unfortunate circumstance you can't
+		  or don't want to use SCSS to make your stylesheet
+		
+		- Rename this file to styles.css to use, might as well 
+		  delete the scss directory and original styles.css too...
+		
+---------------------------------------------------------------------------------	  
+--------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------
+		Puddletown HTML5 Reset
+------------------------------------------------------ */
+html {background-color: #FFF;}
+body {line-height:1.5;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,code,del,dfn,img,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;font-family:inherit;vertical-align:baseline;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+table {border-collapse:separate;border-spacing:0;}
+caption,th,td {text-align:left;font-weight:normal;}
+table,td,th {vertical-align:middle;}
+a img,img,fieldset,abbr,acronym {border:none;}
+a:focus {outline:none;}
+pre,code{ font:115% monospace; }
+blockquote:before,q:before{content:'';}
+blockquote:after,q:after{content:'';}
+ol, ul {padding-left:1.5em;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,canvas,hgroup,summary,time,mark,audio,video,details,figcaption,figure { display:block;}
+/* em, strong{font-style:normal;font-weight:400;} */
+/* br, hr {display: none;} */
+
+/* ------------------------------------------------------
+	  Font Includes
+------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------
+	  Layout
+------------------------------------------------------ */
+body {
+	padding: 1em;
+}
+/* ---------------------------
+	  Header
+--------------------------- */
+
+header {
+
+}
+	header .site {
+		
+		
+	}
+		header .site a {
+			
+			
+		}
+			header .site a img {
+				
+			}
+/* ---------------------------
+	  nav
+--------------------------- */
+
+nav {
+	
+	
+}
+	nav ul {
+		
+		
+	}
+		nav ul li {
+			
+			
+		}
+			nav ul li a {
+				
+			}
+/* ---------------------------
+	  Article
+--------------------------- */
+
+article {
+
+}
+
+/* ---------------------------
+	  Footer
+--------------------------- */
+
+footer {
+
+}
+/* ------------------------------------------------------
+	  Pages
+------------------------------------------------------ */
+/* ---------------------------
+	  Home
+--------------------------- */
+#home {
+	
+}
+
+/* ---------------------------
+	  Pages
+--------------------------- */
+#page {
+	
+	
+}
+
+/* ------------------------------------------------------
+	  Plugins
+------------------------------------------------------ */
+
+
+/* ------------------------------------------------------
+		Responive Control
+------------------------------------------------------ */
+
+/*  Phones only */
+@media (max-width: 480px) {
+	
+	
+}
+
+/*  Tablets & small desktops only */
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+
+
+/*  UP TO LANDSCAPE PHONE */
+@media (max-width: 480px) {
+
+	
+}
+
+
+/*  PORTRAIT TABLET TO DEFAULT DESKTOP */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+
+
+/*  TABLETS AND BELOW */
+@media (max-width: 979px) {
+
+}
+
+
+
+/*  DEFAULT DESKTOP */
+@media (min-width: 980px) {
+
+}
+
+
+
+/*  LARGE DESKTOP & UP */
+@media (min-width: 1200px) {
+
+
+}

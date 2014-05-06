@@ -1,0 +1,21 @@
+/* ------------------------------------------------------
+		Puddletown HTML5 Reset
+------------------------------------------------------ */
+html {background-color: #FFF;}
+body {line-height:1.5;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,code,del,dfn,img,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;font-family:inherit;vertical-align:baseline;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+table {border-collapse:separate;border-spacing:0;}
+caption,th,td {text-align:left;font-weight:normal;}
+table,td,th {vertical-align:middle;}
+a img,img,fieldset,abbr,acronym {border:none;}
+a:focus {outline:none;}
+pre,code{ font:115% monospace; }
+blockquote:before,q:before{content:'';}
+blockquote:after,q:after{content:'';}
+ol, ul {padding-left:1.5em;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,canvas,hgroup,summary,audio,video,details,figcaption,figure { 
+    display:block;
+}
+/* em, strong{font-style:normal;font-weight:400;} */
+/* br, hr {display: none;} */

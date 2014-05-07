@@ -13,11 +13,11 @@ One of the library modules included is JW Post Types by Jeffrey Way (http://jeff
 * [Using SCSS](#using-scss)
 	* [SCSS Directory Structure](#scss-directory-structure)
 * [Modularly loading javscripts with modernizr](#modularly-loading-javscripts-with-modernizr)
-* [Custom Class Documentation](#custom-class-documentation)
+* [Custom PHP Classes Documentation](#custom-class-documentation)
 	* [WPclean Cleanup Class \(functions/wp-clean.php\)](#wpclean-cleanup-class--functionswp-cleanphp)
 	* [Includes Class \(functions/inc.php\)](#includes-class-functionsincphp)
 	* [Custom Post Type Creator Class \(functions/custom-post-types.php\)](#custom-post-type-creator-class-functionscustom-post-typesphp)
-	* [Closing](#closing)
+* [Closing](#closing)
 	
 <hr>		
 
@@ -63,7 +63,6 @@ One of the library modules included is JW Post Types by Jeffrey Way (http://jeff
 7. **Plugins**
 	* Trash Dolly Plugin
 	* Download Plugins (The following are pretty standard)
-		* Page Excerpts: <http://wordpress.org/extend/plugins/page-excerpt/>
 		* Google XML Sitemaps: <http://wordpress.org/extend/plugins/google-sitemap-generator/>
 		* Contact Form 7: <http://wordpress.org/extend/plugins/contact-form-7/>		
 8. **Start Theming!**
@@ -186,7 +185,7 @@ Include class. Let's you define an array of template files to include and pass a
 		'Rating' => 'text'
 	));
 	
-Simple class to allow you to create custom post types from the above code. Only the first block is needed. The second adds custom meta boxes onto the post type. 
+Simple class to allow you to create custom post types from the above code. Only the first block is needed. The second adds custom meta boxes onto the post type. Add as many custom meta boxes as you like organized by label.
 
 This has also been extended to allow you to rename the default posts type from "Posts".
     

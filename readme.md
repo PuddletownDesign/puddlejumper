@@ -1,4 +1,4 @@
-#Puddlejumper wordpress starting theme
+#Puddlejumper wordpress theme
 
 Puddlejumper is a very basic barebones starting theme for Wordpress. It has as much of the cruft removed as possible. 
 
@@ -6,6 +6,19 @@ It has a few simple libraries included in the functions folder that you can take
 
 One of the library modules included is JW Post Types by Jeffrey Way (http://jeffrey-way.com). Which allows for creating custom post types in just a few lines of code. I've included a wrapper class for it to extend functionality and streamline it a little bit.
 
+##Table of Content
+
+* [Features](#features)
+* [Brents's first steps after installing](#brentss-first-steps-after-installing)
+* [Using SCSS](#using-scss)
+	* [SCSS Directory Structure](#scss-directory-structure)
+* [Modularly loading javscripts with modernizr](#modularly-loading-javscripts-with-modernizr)
+* [Custom Class Documentation](#custom-class-documentation)
+	* [WPclean Cleanup Class \(functions/wp-clean.php\)](#wpclean-cleanup-class--functionswp-cleanphp)
+	* [Includes Class \(functions/inc.php\)](#includes-class-functionsincphp)
+	* [Custom Post Type Creator Class \(functions/custom-post-types.php\)](#custom-post-type-creator-class-functionscustom-post-typesphp)
+	* [Closing](#closing)
+	
 <hr>		
 
 ##Features
@@ -28,10 +41,10 @@ One of the library modules included is JW Post Types by Jeffrey Way (http://jeff
 	3. Tags Base: blog/tags
 2. **Appearance > Theme**
 	1. Rename theme directory
-	2. Edit styles.css
-	3. Make a screenshot.png
+	2. Edit your details into styles.css
+	3. Edit screenshot.png
 	4. Refresh
-	5. Set new theme
+	5. Set the new theme
 3. **Pages > New**
 	1. Make "Home"
 		* Set Home template
@@ -104,6 +117,8 @@ This structure promotes a mobile first design pattern.
     styles.css (the final compiled style sheet)
 
 Everything in the scss directory compiles down to styles.css. styles.css is the file that will be read by wordpress. 
+
+I personally work on a mac. I recommend [Scout](http://mhs.github.io/scout-app/) which is cross platform, to compile SCSS. It's a free adobe air app and works great! You can also [install SASS as a ruby gem and work on it from the commandline](http://sass-lang.com/install).
 
 <hr>
 
@@ -180,6 +195,6 @@ This has also been extended to allow you to rename the default posts type from "
 
 ##Closing
 
-Get in touch if you have any question or are interested in contributing to this!
+Get in touch if you have any question or are interested in contributing to this. Or just fork away. Just be sure to keep the license files.
 
 

@@ -10,13 +10,13 @@
 Modernizr.load([
 	/* Libraries */
 	'//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', 
-	'//100lettersforpeace.com/wp-content/themes/100lettersforpeace/js/lib/jquery.slicknav.js',
-	'//100lettersforpeace.com/wp-content/themes/100lettersforpeace/js/lib/jquery.magnific-popup.js',
-	'//100lettersforpeace.com/wp-content/themes/100lettersforpeace/js/lib/jquery.ga.js',
-	'//100lettersforpeace.com/wp-content/themes/100lettersforpeace/js/lib/jquery.form.js',
-	'//100lettersforpeace.com/wp-content/themes/100lettersforpeace/js/lib/contactform7.js',
+	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.slicknav.js',
+	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.magnific-popup.js',
+	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.ga.js',
+	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.form.js',
+	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/contactform7.js',
 	
 	
 	/* Modules */
-	'//100lettersforpeace.com/wp-content/themes/100lettersforpeace/js/scripts.js'
+	'//sitename.com/wp-content/themes/100lettersforpeace/js/scripts.js'
 ]);

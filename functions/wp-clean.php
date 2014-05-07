@@ -21,11 +21,27 @@ class WPclean
 		
 		//clean up image output
 		add_filter( 'post_thumbnail_html', 'WPclean::images', 10 );
+		
+		//Add Rel To Post Links to be able to ta
+		add_filter('next_posts_link_attributes', 'WPclean::next_posts_link_attributes');
+		add_filter('previous_posts_link_attributes', 'WPclean::prev_posts_link_attributes');
 	    
 	    //deregister plugin crap
 	    self::$plugins = $plugins;
 	    add_action( 'wp_print_styles', 'WPclean::deregister_plugins', 100 );
 	    
+	}
+	
+	/**
+	 * Someway of targeting the next/prev links. (Semantic too!)
+	 */
+	private static function next_posts_link_attributes()
+	{
+		return 'rel="next"';
+	}
+	private static function prev_posts_link_attributes()
+	{
+		return 'rel="prev"';
 	}
 	
 	

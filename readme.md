@@ -4,9 +4,19 @@ Puddlejumper is a very basic barebones starting theme for Wordpress. It has as m
 
 It has a few simple libraries included in the functions folder that you can take advantage of. Most of them are being used by default.
 
-One of the library modules included is JW Post Types by Jeffrey Way (http://jeffrey-way.com). Which allows for creating custom post types in just a few lines of code. I've included a wrapper class for it so extend functionality and streamline it a little bit.
+One of the library modules included is JW Post Types by Jeffrey Way (http://jeffrey-way.com). Which allows for creating custom post types in just a few lines of code. I've included a wrapper class for it to extend functionality and streamline it a little bit.
 
 <hr>		
+
+##Features
+
+* Setup to use SASS. Sheets broken down into logical structures.
+* Simple semantic templates (each type individually stylable)
+* Tons of useless code, classes, bizzaro semantics removed 
+* A few useful classes thrown in to make some common things easy. Feel free not to use them either!
+* Did I mention that piles of useless garbage is removed?
+
+<hr>
 
 ##Brents's first steps after installing
 
@@ -48,9 +58,59 @@ One of the library modules included is JW Post Types by Jeffrey Way (http://jeff
 
 <hr>
 
+##Using SCSS
+
+A quickover view on working with the included SCSS features. The best part is you don't have to use them. Just feel free to start writing in the css/styles.css file.
+
+All of the included tags are already targeted in the SCSS files and ready to be themed.
+
+This structure promotes a mobile first design pattern.
+
+###SCSS Directory Structure
+
+    scss/ (hold all of the scss data, ignored by wordpress)
+    |
+   	|	_colors.scss (holds the master color codes for the theme)
+    |
+    |	_fonts.scss (holds any @fontface or font data)
+    |
+    |	_layout.scss (the basic layout of the site globally)
+    |
+    |	_mixins.scss (common recurring items, like buttons can go here)
+    |
+    |	_pages.scss (page specific styles, each body tag can be given it's own class)
+    |
+    |	_plugins.scss (where all wordpress or other plugin css goes)
+    |
+    |	_reset.scss (css reset)
+    |
+    |	_responsive.scss (controls how the responsive settings for the site work)
+    |
+    |	_typography.scss (holds the master typography data for the site)
+    |
+    |	responsive/ (holds resposive variations)
+    |   |
+    |	|	_480.scss (ex. layouts > 480px)
+    |   |
+    |	|	_760.scss (ex. layouts > 760px)
+    |   |
+    |	|	_980.scss  (ex. layouts > 980px)
+    |   |
+    |	|	_1200.scss (ex. layouts > 1200px)
+    |   |
+    |	|	_1201.scss (ex. everything else)
+    |   |
+    |	styles.scss (loads each of the above SCSS files in the correct order)
+    |
+    styles.css (the final compiled style sheet)
+
+Everything in the scss directory compiles down to styles.css. styles.css is the file that will be read by wordpress. 
+
+<hr>
+
 ##Custom Class documentation
 
-This is some shoddy documentation for the libraries included in the functions directory.
+This is some shoddy documentation for the libraries included in the functions directory. It'll get better.
 
 ###WPclean (functions/wp-clean.php)
 
@@ -60,7 +120,7 @@ This is some shoddy documentation for the libraries included in the functions di
     );
     WPclean::init($plugin_scripts_and_styles_to_remove);
 
-The Wordpress Clean class will take out all sorts of needless crap from the theme. Also includes a hook to remove scripts and styles from the wp-head so you can include them yourself in a civilized fashion (not 20 js/css requests)
+The Wordpress Clean class will take out all sorts of needless crap from the theme. Also includes a hook to remove scripts and styles from the wp-head so you can include them yourself in a civilized fashion (not 20 js/css requests). I've included Modernizr. It's require method works nicely and this is set up by default to use it. Again if you don't want to use it. Just delete it from the head and include scripts however you want to.
 
 ###Inc (functions/inc.php)
 
@@ -90,6 +150,7 @@ Simple class to allow you to create custom post types from the above code. Only 
 This has also been extended to allow you to rename the default posts type from "Posts".
     
     PostType::renameDefaultPosts("News");
+
 
 ##Closing
 

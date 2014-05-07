@@ -17,5 +17,8 @@ ol, ul {padding-left:1.5em;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,canvas,hgroup,summary,audio,video,details,figcaption,figure { 
     display:block;
 }
+iframe, video, audio, canvas {
+	width: 100%;
+}
 /* em, strong{font-style:normal;font-weight:400;} */
 /* br, hr {display: none;} */

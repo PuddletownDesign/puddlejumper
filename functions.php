@@ -4,6 +4,11 @@
  */
 
 /**
+ * Add Theme Support
+ */
+add_theme_support( 'post-thumbnails' ); 
+
+/**
  * Register the Primary Nav
  */
 register_nav_menus(array('primary' => 'Primary Navigation'));
@@ -23,6 +28,7 @@ register_sidebar(array(
 	)
 );
 
+
 /** 
   Includes Class
   this is a small library to include files and elements into wordpress
@@ -35,7 +41,7 @@ include 'functions/inc.php';
 /** 
  *   Load the Clean up class
     
-    go inside functions.wp-clean and edit to your preference
+    go inside functions/wp-clean and edit to your preference
     
     #using  $plugin_scripts_and_styles_to_remove
     

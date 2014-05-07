@@ -136,14 +136,14 @@ Once again if you don't want to use this just don't call modernizr in the includ
     Modernizr.load([
     	/* Libraries */
     	'//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', 
-    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.slicknav.js',
-    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.magnific-popup.js',
-    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.ga.js',
-    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.form.js',
-    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/contactform7.js',
+    	'//sitename.com/wp-content/themes/puddlejumper/js/lib/jquery.slicknav.js',
+    	'//sitename.com/wp-content/themes/puddlejumper/js/lib/jquery.magnific-popup.js',
+    	'//sitename.com/wp-content/themes/puddlejumper/js/lib/jquery.ga.js',
+    	'//sitename.com/wp-content/themes/puddlejumper/js/lib/jquery.form.js',
+    	'//sitename.com/wp-content/themes/puddlejumper/js/lib/contactform7.js',
     	
     	/* Modules */
-    	'//sitename.com/wp-content/themes/100lettersforpeace/js/scripts.js'
+    	'//sitename.com/wp-content/themes/puddlejumper/js/scripts.js'
     ]);
 
 <hr>

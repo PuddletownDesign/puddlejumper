@@ -1,6 +1,6 @@
 #Puddlejumper wordpress starting theme
 
-Puddlejumper is a very basic barebones starting theme for Wordpress. It has as much of the cruft removed. 
+Puddlejumper is a very basic barebones starting theme for Wordpress. It has as much of the cruft removed as possible. 
 
 It has a few simple libraries included in the functions folder that you can take advantage of. Most of them are being used by default.
 
@@ -14,8 +14,7 @@ One of the library modules included is JW Post Types by Jeffrey Way (http://jeff
 * Modularly loaded javascript with modernizr
 * Simple semantic templates (each type individually stylable)
 * Tons of useless code, classes, bizzaro semantics removed 
-* A few useful classes thrown in to make some common things easy. Feel free not to use them either!
-* Did I mention that piles of useless garbage is removed?
+* A few useful PHP classes thrown in to make some common things easy. Feel free not to use them either!
 
 <hr>
 
@@ -41,7 +40,6 @@ One of the library modules included is JW Post Types by Jeffrey Way (http://jeff
 	3. Ideally one other static page for templating (ex. About)
 4. **Settings > General Settings**
     1. Set each preference
-
 5. **Settings > Reading**
 	1. Set Front Page to "Home"
 	2. Set Post Page to "Blog"
@@ -99,7 +97,7 @@ This structure promotes a mobile first design pattern.
     |   |
     |	|	_1200.scss (ex. layouts > 1200px)
     |   |
-    |	|	_1201.scss (ex. everything else)
+    |	|	_1350.scss (ex. layouts > 1350px)
     |   |
     |	styles.scss (loads each of the above SCSS files in the correct order)
     |

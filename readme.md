@@ -140,7 +140,7 @@ Once again if you don't want to use this just don't call modernizr in the includ
 
 This is some shoddy documentation for the libraries included in the functions directory. It'll get better.
 
-###WPclean (functions/wp-clean.php)
+###WPclean Cleanup Class  (functions/wp-clean.php)
 
     $plugin_scripts_and_styles_to_remove = array(
         'jquery',
@@ -150,13 +150,13 @@ This is some shoddy documentation for the libraries included in the functions di
 
 The Wordpress Clean class will take out all sorts of needless crap from the theme. Also includes a hook to remove scripts and styles from the wp-head so you can include them yourself in a civilized fashion (not 20 js/css requests). I've included Modernizr. It's require method works nicely and this is set up by default to use it. Again if you don't want to use it. Just delete it from the head and include scripts however you want to.
 
-###Inc (functions/inc.php)
+###Includes Class (functions/inc.php)
 
     <?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'home' ); ?>
 
 Include class. Let's you define an array of template files to include and pass a string to be the class on the page body. I believe this was taken out of the bones theme then extended to allow a string for body class.
 
-###Custom Post Class
+###Custom Post Type Creator Class (functions/custom-post-types.php)
 
     $recipe = new PostType('recipe', array( 
 	     'supports' => array( 

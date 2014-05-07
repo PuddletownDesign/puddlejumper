@@ -11,6 +11,7 @@ One of the library modules included is JW Post Types by Jeffrey Way (http://jeff
 ##Features
 
 * Setup to use SASS. Sheets broken down into logical structures.
+* Modularly loaded javascript with modernizr
 * Simple semantic templates (each type individually stylable)
 * Tons of useless code, classes, bizzaro semantics removed 
 * A few useful classes thrown in to make some common things easy. Feel free not to use them either!
@@ -105,6 +106,33 @@ This structure promotes a mobile first design pattern.
     styles.css (the final compiled style sheet)
 
 Everything in the scss directory compiles down to styles.css. styles.css is the file that will be read by wordpress. 
+
+<hr>
+
+##Modularly loading javscripts with modernizr
+
+    js/lib/modernizr.js
+
+The head calls the modernizr file which loads in any listed files. You will have to change sitename.com to whatever the domain is.
+
+Shown below is the lazy approach. You can easily use if/else statements and only include scripts on the pages that need them! Take that wordpress!
+
+Coupled with the WPClean Class you can inlcude scripts yourself and compile plugin css with scss.
+
+Once again if you don't want to use this just don't call modernizr in the includes/html-header.php file. Then include javascript in whatever fashion you like.
+
+    Modernizr.load([
+    	/* Libraries */
+    	'//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', 
+    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.slicknav.js',
+    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.magnific-popup.js',
+    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.ga.js',
+    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.form.js',
+    	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/contactform7.js',
+    	
+    	/* Modules */
+    	'//sitename.com/wp-content/themes/100lettersforpeace/js/scripts.js'
+    ]);
 
 <hr>
 

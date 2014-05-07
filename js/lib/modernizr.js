@@ -16,7 +16,6 @@ Modernizr.load([
 	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/jquery.form.js',
 	'//sitename.com/wp-content/themes/100lettersforpeace/js/lib/contactform7.js',
 	
-	
 	/* Modules */
 	'//sitename.com/wp-content/themes/100lettersforpeace/js/scripts.js'
 ]);

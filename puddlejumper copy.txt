@@ -1,0 +1,13 @@
+Let's face it...
+
+Wordpress is a garbage kludge used so that clients can enter information into templates. It's cheap, it's easy, it's barely a CMS, and the code base is a disaster. There's nothing you can do about that because you are required to use it.
+
+Why not serve clean HTML and at least make custom theming easy?
+
+Puddlejumper removes all the crap from wordpress. All the unneeded mark up, all of the bullshit classes, the million included javascript and css files and puts them back into your control as needed.
+
+Use any CSS or javascript framework you choose. Add back classes willy nilly. But start off with a clean slate.
+
+Puddlejumper is a wordpress theme reset. It starts off SASS & jQuery ready. But of course you can just remove those as well in about two clicks.
+
+There is a guide included so that with 10 super simple steps in the admin panel so that you have a blog and static site ready to theme.

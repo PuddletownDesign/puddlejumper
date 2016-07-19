@@ -8,14 +8,11 @@
  * Script Loader
  */
 Modernizr.load([
-	/* Libraries */
-	'//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', 
-	'//sitename.com/wp-content/themes/puddlejumper/js/lib/jquery.slicknav.js',
-	'//sitename.com/wp-content/themes/puddlejumper/js/lib/jquery.magnific-popup.js',
-	'//sitename.com/wp-content/themes/puddlejumper/js/lib/jquery.ga.js',
-	'//sitename.com/wp-content/themes/puddlejumper/js/lib/jquery.form.js',
-	'//sitename.com/wp-content/themes/puddlejumper/js/lib/contactform7.js',
-	
-	/* Modules */
-	'//sitename.com/wp-content/themes/puddlejumper/js/scripts.js'
+	'//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js', 
+	'//puddlejumper.dev:8080/wp-content/themes/puddlejumper/js/lib/jquery.slicknav.js',
+	'//puddlejumper.dev:8080/wp-content/themes/puddlejumper/js/lib/jquery.magnific-popup.js',
+	//'//puddlejumper.dev:8080/wp-content/themes/puddlejumper/js/lib/jquery.ga.js',
+	//'//puddlejumper.dev:8080/wp-content/themes/puddlejumper/js/lib/jquery.form.js',
+	//'//puddlejumper.dev:8080/wp-content/themes/puddlejumper/js/lib/contactform7.js',
+	'//puddlejumper.dev:8080/wp-content/themes/puddlejumper/js/scripts.js'
 ]);

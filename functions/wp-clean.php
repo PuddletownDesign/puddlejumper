@@ -6,7 +6,7 @@
 
 class WPclean
 {
-    private static $plugins;
+    protected static $plugins;
 
 
 	/** 
@@ -19,32 +19,91 @@ class WPclean
 	    //clean out the wordpress navs
 	    self::nav();
 		
+		//get rid of emoji garbage
+		add_action( 'init', 'WPclean::disable_wp_emojicons' );
+		
+
+	    // filter to remove TinyMCE emojis
+	    add_filter( 'tiny_mce_plugins', 'WPclean::disable_emojicons_tinymce' );
+		
 		//clean up image output
 		add_filter( 'post_thumbnail_html', 'WPclean::images', 10 );
 		
 		//Add Rel To Post Links to be able to ta
 		add_filter('next_posts_link_attributes', 'WPclean::next_posts_link_attributes');
 		add_filter('previous_posts_link_attributes', 'WPclean::prev_posts_link_attributes');
-	    
+		
 	    //deregister plugin crap
 	    self::$plugins = $plugins;
 	    add_action( 'wp_print_styles', 'WPclean::deregister_plugins', 100 );
 	    
+		//remove new recent comments css - are these devs on drugs? wtf is wrong with them?
+		add_action( 'widgets_init', 'WPclean::my_remove_recent_comments_style' );
+		
+		//holy shit more scripts
+		add_action( 'init', 'WPclean::disable_oembed_embed', PHP_INT_MAX - 1 );
 	}
 	
 	/**
 	 * Someway of targeting the next/prev links. (Semantic too!)
 	 */
-	private static function next_posts_link_attributes()
+	public static function disable_emojicons_tinymce( $plugins ) {
+	  if ( is_array( $plugins ) ) {
+	    return array_diff( $plugins, array( 'wpemoji' ) );
+	  } else {
+	    return array();
+	  }
+	}
+	/**
+	 * Disable OMBED Enbed
+	 */
+	public static function disable_oembed_embed() {
+
+	    // Remove the REST API endpoint.
+	    remove_action('rest_api_init', 'wp_oembed_register_route');
+
+	    // Turn off oEmbed auto discovery.
+	    // Don't filter oEmbed results.
+	    remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
+
+	    // Remove oEmbed discovery links.
+	    remove_action('wp_head', 'wp_oembed_add_discovery_links');
+
+	    // Remove oEmbed-specific JavaScript from the front-end and back-end.
+	    remove_action('wp_head', 'wp_oembed_add_host_js');
+	}
+	/**
+	 * Get Rid of emoji crap all over pages
+	 */
+	public static function disable_wp_emojicons() {
+
+	  // all actions related to emojis
+	  remove_action( 'admin_print_styles', 'print_emoji_styles' );
+	  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	  remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+	  remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+	  remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+
+	}
+	/**
+	 * Get rid of recent comments
+	 */
+	public static function my_remove_recent_comments_style() {
+		global $wp_widget_factory;
+		remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'  ) );
+	}
+	
+	protected static function next_posts_link_attributes()
 	{
 		return 'rel="next"';
 	}
-	private static function prev_posts_link_attributes()
+	protected static function prev_posts_link_attributes()
 	{
 		return 'rel="prev"';
 	}
-	
-	
+
     /** 
      Clean Up wp_head()
 
@@ -52,7 +111,7 @@ class WPclean
      over what to include
      */
 
-    private static function head()
+    protected static function head()
     {
         //comment out any that you want to keep
         remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
@@ -72,7 +131,7 @@ class WPclean
     /** 
      * Clean unneeded classes and attributes out of the nav
      */
-    private static function nav() 
+    protected static function nav() 
     { 
         //comment out any you would like to keep
         add_filter('nav_menu_css_class', 'WPclean::strip_attribute', 100, 1); //strip class names from menu

@@ -1,27 +1,14 @@
 /* ---------------------------
 	  Base Includes
 --------------------------- */
-@import '_mixins.scss';
-@import '_colors.scss';
-@import '_fonts.scss';
-@import '_reset.scss';
-@import '_typography.scss';
+@import 'includes/_colors.scss';
+@import 'includes/_mixins.scss';
 
-/* ---------------------------
-	  Layout
---------------------------- */
+@import 'includes/_reset.scss';
 
-@import '_layout.scss';
-@import '_pages.scss';
+@import 'includes/_fonts.scss';
+@import 'includes/_typography.scss';
 
-/* ---------------------------
-	  Plugins
---------------------------- */
+@import 'includes/_responsive.scss';
+@import 'includes/_plugins.scss';
 
-@import '_plugins.scss';
-
-/* ---------------------------
-      Responsive Layout
---------------------------- */
-
-@import '_responsive.scss';

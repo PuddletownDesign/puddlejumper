@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/styles.css">
 	<script src="<?php bloginfo('template_directory');?>/js/lib/modernizr.js"></script>
 	<?php wp_head(); ?>
-	
 </head>
 
 <body<?php if (isset($template)): ?> class="<?php echo $template; ?>"<?php endif; ?>>
+	

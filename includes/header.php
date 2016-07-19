@@ -18,21 +18,9 @@ Also, no reason to display a link to the homepage on the homepage
 			<img src="<?php bloginfo('template_directory');?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?> | <?php bloginfo( 'description' ); ?>">
 		</a>
 	</div>
-
 <?php endif; ?>
-
-    <?php /* Here we have the search form */ ?>
-	<form action="<?php echo site_url(); ?>" method="get" id="search">
-		<input type="search" name="s" placeholder="search" role="search">		
-		<input type="submit" id="submit" value="Search">
-	</form>
-	
-    <?php /* Primary Navigation - Check the functions/formatting.php to control classes and attributes */ ?>
-	
-	<nav class="primary" role="navigation">
-    	<?php Inc::nav('primary'); ?>
+	<nav>
+<?php Inc::nav('primary'); ?>
     	
     </nav>
 </header>
-
-

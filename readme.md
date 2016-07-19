@@ -2,6 +2,8 @@
 
 Puddlejumper is a very basic barebones starting theme for Wordpress. It has as much of the cruft removed as possible. 
 
+![Example page code](http://i.imgur.com/JW4xCYC.png)
+
 It has a few simple libraries included in the functions folder that you can take advantage of. Most of them are being used by default.
 
 One of the library modules included is JW Post Types by Jeffrey Way (http://jeffrey-way.com). Which allows for creating custom post types in just a few lines of code. I've included a wrapper class for it to extend functionality and streamline it a little bit.

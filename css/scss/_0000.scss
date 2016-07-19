@@ -1,14 +1,26 @@
 html {
-    
+    a {
+        color: $black;
+    }
 }
 body {
-    font-size: 100%;
+    font-size: 110%;
+    max-width: 41em;
+    margin: 0 auto;
+    padding: 3em 1em;
     
 /* ---------------------------
       Basic Layout
 --------------------------- */
     
     >header {
+        h1, >a {
+            padding: 0;
+            margin: 0;
+            font-size: 1em;
+            line-height: 1em;
+            display: block;
+        }
         nav {
             ul {
                 li {

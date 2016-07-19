@@ -8,19 +8,12 @@ There's obviously no need for an explict 'Home' Title on the home page, that's w
 Also, no reason to display a link to the homepage on the homepage
 */ ?>
 <?php if (is_front_page()): ?>
-	<h1>
-		<img src="<?php bloginfo('template_directory');?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?> | <?php bloginfo( 'description' ); ?>">
-	</h1>
-
+	<h1><img src="<?php bloginfo('template_directory');?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?> | <?php bloginfo( 'description' ); ?>"></h1>
 <?php else: ?>
-	<div>
-		<a href="<?php echo site_url(); ?>">
-			<img src="<?php bloginfo('template_directory');?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?> | <?php bloginfo( 'description' ); ?>">
-		</a>
-	</div>
+	<a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory');?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?> | <?php bloginfo( 'description' ); ?>"></a>
 <?php endif; ?>
+
 	<nav>
 <?php Inc::nav('primary'); ?>
-    	
-    </nav>
+	</nav>
 </header>

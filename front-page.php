@@ -5,11 +5,11 @@ Template Name: Home
 ?>
 <?php Inc::templates( array( 'includes/html-header', 'includes/header' ), 'home' ); ?>
 
-<article id="home">
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-	<?php edit_post_link(__("Edit"), ''); ?>
-	<?php the_content(); ?>
 
+<article>
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<?php edit_post_link(__("Edit"), ''); ?>
+<?php the_content(); ?>
 <?php endwhile; ?>
 
 </article>

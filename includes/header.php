@@ -29,7 +29,7 @@ Also, no reason to display a link to the homepage on the homepage
 	
     <?php /* Primary Navigation - Check the functions/formatting.php to control classes and attributes */ ?>
 	
-	<nav class="primary" role="navigation">
+	<nav>
     	<?php Inc::nav('primary'); ?>
     	
     </nav>
